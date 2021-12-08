@@ -51,6 +51,7 @@ def login(userapitoken, endpoint):
     try:
        headers['X-XSRF-TOKEN'] = r.cookies['XSRF-TOKEN']
     except:
+       print("exception occured")
        pass
 
 def main(arguments):
